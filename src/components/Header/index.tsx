@@ -18,10 +18,10 @@ export default function Header() {
 
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-      backdrop-blur-sm bg-gradient-to-r from-[#FFFFFF] to-[#999999] h-50 w-100"
+        backdrop-blur-sm bg-gradient-to-r from-[#FFFFFF70] to-[#99999970] h-50 w-100 rounded-xl flex flex-col
+        items-center justify-center"
       >
-        <h1>aaaa</h1>
-        <button>aaaa</button>
+        <h1 className="bg-bgColorHeaderContent w-80 h-20 text-center text-xl rounded-md p-2 flex justify-center items-center">Bem vindo ao meu portifólio</h1>
       </div>
       <Wave
         fill="#4f28ea"
