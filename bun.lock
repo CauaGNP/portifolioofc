@@ -10,6 +10,7 @@
         "lucide-react": "^0.545.0",
         "react": "^19.1.1",
         "react-dom": "^19.1.1",
+        "react-wavify": "^1.11.1",
         "tailwind-merge": "^3.3.1",
       },
       "devDependencies": {
@@ -442,6 +443,8 @@
     "react": ["react@19.2.0", "", {}, "sha512-tmbWg6W31tQLeB5cdIBOicJDJRR2KzXsV7uSK9iNfLWQ5bIZfxuPEHp7M8wiHyHnn0DD1i7w3Zmin0FtkrwoCQ=="],
 
     "react-dom": ["react-dom@19.2.0", "", { "dependencies": { "scheduler": "^0.27.0" }, "peerDependencies": { "react": "^19.2.0" } }, "sha512-UlbRu4cAiGaIewkPyiRGJk0imDN2T3JjieT6spoL2UeSf5od4n5LB/mQ4ejmxhCFT1tYe8IvaFulzynWovsEFQ=="],
+
+    "react-wavify": ["react-wavify@1.11.1", "", { "peerDependencies": { "react": "^0.13.0 || ^0.14.0 || >=15" } }, "sha512-9MWGSwdVBri2XsegpysGyxWAeqIKdikwj+6Dg2Ssi3xFoY5HUVDiPbEZ62ZP30DefKE5IzWKNdFjyIEJfVikhw=="],
 
     "resolve-from": ["resolve-from@4.0.0", "", {}, "sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g=="],
 

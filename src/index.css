@@ -1,15 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --bgColorWaveUp : "#EA2845";
-  --bgColorWaveDown : "#4F28EA";
-  --bgColorHeader: "#333333";
+  --bgColorHeader: #333333;
 
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 }
-
-
+@theme inline {
+  --color-bgColorHeader: var(--bgColorHeader);
+}
 
 @media (prefers-color-scheme: light) {
   :root {
