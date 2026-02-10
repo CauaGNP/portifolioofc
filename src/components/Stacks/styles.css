@@ -1,0 +1,28 @@
+.stackContain{
+    background-color: red;
+    width: 130px;
+    height: 130px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.children {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.children svg {
+  font-size: 50px; 
+}
+
+.stackText{
+    font-family: var(--popppins);
+    font-size: 24px;
+    font-weight: 400;
+}

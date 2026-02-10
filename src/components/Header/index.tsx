@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./style.css"
 
-export default function Header(){
+export function Header(){
     const title = "Bem vindo!!";
     const subTitle = "Meu nome é Cauã Gabriel, sou desenvolvedor full-stack(React, Nextjs, Spring e Express). Meu objetivo é transformar sonhos em aplicações!!"
 
