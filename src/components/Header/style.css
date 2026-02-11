@@ -18,7 +18,7 @@
 }
 
 .headerTitle{
-    font-family: var(--popppins);
+    font-family: var(--poppins);
     font-size: 40px;
     font-weight: 200;
     color: #fff;
@@ -26,15 +26,44 @@
 
 
 .headerSubTitle{
-    font-family: var(--popppins);
+    font-family: var(--poppins);
     font-size: 16px;
     font-weight: 200;
     color: #fff;
 }
 
-.image{
-    background-color: white;
-
+.imageContain{
     width: 300px;
     height: 300px;
+    animation: fadeIn ease 2s;
+}
+
+.image{
+    width: 100%;
+}
+
+.paragrapfImage{
+    font-family: var(--poppins);
+    color: #fff;
+}
+
+.storySetLink{
+    font-family: var(--poppins);
+    color: var(--secondaryColor);
+    transition: all .3s ease;
+}
+
+.storySetLink:hover{
+    color: var(--secondaryColorHover);
+}
+
+@keyframes fadeIn {
+    0% {
+    opacity: 0;
+    transform: translateY(10px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

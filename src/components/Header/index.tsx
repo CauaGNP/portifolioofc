@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import CodeImage from "../../assets/code.png"
 import "./style.css"
 
 export function Header(){
@@ -53,8 +54,9 @@ export function Header(){
             <h1 className="headerTitle">{displayText.title}</h1>
             <h2 className="headerSubTitle">{displayText.subTitle}</h2>
         </div>
-        <div className="image">
-
+        <div className="imageContain">
+            <img src={CodeImage} className="image"/>
+            <p className="paragrapfImage">Data illustrations by <a href="https://storyset.com/data" className="storySetLink" target="_blank">Storyset</a></p>
         </div>
     </header>
 }
