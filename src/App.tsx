@@ -18,9 +18,9 @@ function App() {
 
           <section className='stacksSection'>
             <h1>Tecnologias</h1>
-            <section>
+            <section className='stacksContain'>
               <h1>Front-End</h1>
-              <div>
+              <div className='stacksDiv'>
                 <Stacks technologyName="JavaScript">
                   <SiJavascript/>
                 </Stacks>
@@ -38,9 +38,9 @@ function App() {
                 </Stacks>
             </div> 
             </section>
-            <section>
+            <section className='stacksContain'>
               <h1>Back-end</h1>
-              <div>
+              <div className='stacksDiv'>
                 <Stacks technologyName="SpringBoot">
                   <BiLogoSpringBoot/>
                 </Stacks>
@@ -49,9 +49,9 @@ function App() {
                 </Stacks>
               </div>
             </section>
-            <section>
+            <section className='stacksContain'>
               <h1>Ferramentas</h1>
-              <div>
+              <div className='stacksDiv'>
                 <Stacks technologyName="Git">
                   <SiGit/>
                 </Stacks>

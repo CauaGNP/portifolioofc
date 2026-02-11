@@ -4,5 +4,15 @@
 }
 
 .stacksSection{
-  wid
+  width: 100%;
+}
+
+.stacksDiv{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.stacksContain{
+  width: 20%;
 }
