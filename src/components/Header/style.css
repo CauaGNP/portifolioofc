@@ -15,7 +15,7 @@
   max-width: 500px; 
 }
 
-.headerTitle {
+.headerTitle { 
   font-family: var(--poppins);
   font-size: 48px; 
   font-weight: 300;

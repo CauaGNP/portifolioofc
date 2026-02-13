@@ -1,40 +1,40 @@
-.container{
+.container {
   background-color: var(--backgroundPrimary);
   min-height: 100vh;
   width: 100%;
 }
 
-.main{
+.main {
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 64px;
 }
 
-h1{
+h1 {
   font-family: var(--robotoMono);
   letter-spacing: -0.05em;
   font-weight: 400;
 }
 
-.paragraph{
+.paragraph {
   font-family: var(--poppins);
   font-size: 1.2em;
 }
 
-.aboutMe{
+.aboutMe {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.aboutMeTextContain{
-    width: 50%;
+.aboutMeTextContain {
+  width: 50%;
 }
 
-.aboutMeImage{
-    width: 300px;
-    animation: aboutFadeIn ease 2s forwards;
+.aboutMeImage {
+  width: 300px;
+  animation: aboutFadeIn ease 2s forwards;
 }
 
 @keyframes aboutFadeIn {
@@ -48,42 +48,43 @@ h1{
   }
 }
 
-.stackSection{
+.stackSection {
   background: rgba(45, 44, 44, 0.504);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);  padding: 24px;
+  -webkit-backdrop-filter: blur(10px);
+  padding: 24px;
   border-radius: 8px;
   border: 1px solid #0000004d;
-  
+
   box-shadow: 0 4px 30px #0000001a;
 }
 
 .gridLayout {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
-  grid-template-areas: 
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
     "front ."
     ".     back"
     "tools .";
   gap: 20px;
 }
 
-.front{
+.front {
   grid-area: front;
 }
 
 .back {
-  text-align: right; 
+  text-align: right;
 }
 .back .stacksDiv {
-  justify-content: end; 
+  justify-content: end;
 }
 
-.tools{
+.tools {
   grid-area: tools;
 }
 
-.tecnologiesDivExample{
+.tecnologiesDivExample {
   display: flex;
   flex-direction: row;
   gap: 24px;

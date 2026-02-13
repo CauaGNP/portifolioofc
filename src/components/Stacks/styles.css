@@ -1,14 +1,14 @@
-.stackContain{
-    width: 130px;
-    height: 130px;
+.stackContain {
+  width: 130px;
+  height: 130px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.children {  
+.children {
   width: 70px;
   height: 70px;
   display: flex;
@@ -17,11 +17,11 @@
 }
 
 .children svg {
-  font-size: 45px; 
+  font-size: 45px;
 }
 
-.stackText{
-    font-family: var(--poppins);
-    font-size: 18px;
-    font-weight: 400;
+.stackText {
+  font-family: var(--poppins);
+  font-size: 18px;
+  font-weight: 400;
 }
