@@ -48,7 +48,21 @@ h1 {
   }
 }
 
+.stacksTitle{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .stackSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.stakcsContain{
+  text-align: center;
+  width: 100%;
   background: rgba(45, 44, 44, 0.504);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -59,33 +73,14 @@ h1 {
   box-shadow: 0 4px 30px #0000001a;
 }
 
-.gridLayout {
+.divStack{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "front ."
-    ".     back"
-    "tools .";
-  gap: 20px;
 }
 
-.front {
-  grid-area: front;
-}
+.projectsSection{
+  background-color: var(--backgroundSecondary);
 
-.back {
-  text-align: right;
-}
-.back .stacksDiv {
-  justify-content: end;
-}
-
-.tools {
-  grid-area: tools;
-}
-
-.tecnologiesDivExample {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
+  width: 100%;
+  height: 40px;
 }

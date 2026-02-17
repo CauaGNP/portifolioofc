@@ -1,4 +1,8 @@
-import { SiJavascript } from "react-icons/si";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { BsGit } from "react-icons/bs";
+import { FaGithub, FaJava, FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiExpress, SiNextdotjs, SiTypescript } from "react-icons/si";
 import "./App.css";
 import Person from "./assets/person.png";
 import { Header } from "./components/Header";
@@ -34,58 +38,38 @@ function App() {
             </p>
           </div>
         </section>
-        <section className="stackSection gridLayout">
-          <div className="frontend">
-            <h1>Front-End</h1>
-            <div className="tecnologiesDivExample">
-              <Stacks technologyName="JavaScript">
-                <SiJavascript />
-              </Stacks>
-              <Stacks technologyName="JavaScript">
-                <SiJavascript />
-              </Stacks>
-              <Stacks technologyName="JavaScript">
-                <SiJavascript />
-              </Stacks>
-              <Stacks technologyName="JavaScript">
-                <SiJavascript />
-              </Stacks>
+        <section >
+          <h1 className="stacksTitle">Habilidades</h1>
+          <section className="stackSection">
+            <div className="stakcsContain">
+              <h1>Front-End</h1>
+              <div className="divStack">
+                <Stacks technologyName="TypeScript"> <SiTypescript /> </Stacks>
+                <Stacks technologyName="React"> <FaReact /> </Stacks>
+                <Stacks technologyName="NextJs"> <SiNextdotjs /> </Stacks>
+                <Stacks technologyName="Tailwind"> <RiTailwindCssFill /> </Stacks>
+              </div>
             </div>
-          </div>
-          <div className="backend">
-            <h1>Back-End</h1>
-            <div className="tecnologiesDivExample">
-              <Stacks technologyName="JavaScript">
-                <SiJavascript />
-              </Stacks>
-              <Stacks technologyName="JavaScript">
-                <SiJavascript />
-              </Stacks>
-              <Stacks technologyName="JavaScript">
-                <SiJavascript />
-              </Stacks>
-              <Stacks technologyName="JavaScript">
-                <SiJavascript />
-              </Stacks>
+            <div className="stakcsContain">
+              <h1>Back-End</h1>
+              <div className="divStack">
+                <Stacks technologyName="Java"> <FaJava /> </Stacks>
+                <Stacks technologyName="SpringBoot"> <BiLogoSpringBoot /> </Stacks>
+                <Stacks technologyName="Express"> <SiExpress /> </Stacks>
+              </div>
             </div>
-          </div>
-          <div className="tools">
-            <h1>Ferramentas</h1>
-            <div className="tecnologiesDivExample">
-              <Stacks technologyName="JavaScript">
-                <SiJavascript />
-              </Stacks>
-              <Stacks technologyName="JavaScript">
-                <SiJavascript />
-              </Stacks>
-              <Stacks technologyName="JavaScript">
-                <SiJavascript />
-              </Stacks>
-              <Stacks technologyName="JavaScript">
-                <SiJavascript />
-              </Stacks>
+            <div className="stakcsContain">
+              <h1>Ferramentas</h1>
+              <div className="divStack">
+                <Stacks technologyName="GitHub"> <FaGithub /> </Stacks>
+                <Stacks technologyName="Git"> <BsGit /> </Stacks>
+              </div>
             </div>
-          </div>
+          </section>
+
+          <section className="projectsSection">
+
+          </section>
         </section>
       </main>
     </div>
