@@ -1,0 +1,74 @@
+.projectSection {
+    display: flex;
+    position: relative; 
+    overflow: hidden;   
+}
+
+.webImageProject{
+    width: 480px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.detailsProjectDiv {
+    width: 60%;
+    background: rgba(45, 44, 44, 0.504);
+    padding: 16px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headerProjectDiv{
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000004d;
+}
+
+.detailsTitle{
+    font-family: var(--poppins);
+    color: var(--textPrimaryColor);
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.detailsParagraph{
+    font-family: var(--robotoMono);
+    color: var(--textPrimaryColor);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.stacksFromProjects{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.stacksFromProjectsTitle{
+    font-family: var(--poppins);
+    color: var(--textPrimaryColor);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.motion{
+    width: 100%;
+    display: flex;
+}
+
+.githublink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.githublink svg {
+    font-size: 24px;
+}

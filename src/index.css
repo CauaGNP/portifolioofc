@@ -3,6 +3,7 @@
 :root {
   --backgroundPrimary: #333333;
   --backgroundSecondary: #1f1e1e;
+  --textPrimaryColor: #dadada;
   --secondaryColor: #4f28ea;
   --secondaryColorHover: #3b1eae;
   --poppins: "Poppins", sans-serif;
