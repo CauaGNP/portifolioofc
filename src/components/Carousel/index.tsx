@@ -16,6 +16,5 @@ export function Carousel(children: ReactNode) {
     };
 
     return <section>
-
     </section>
 }
