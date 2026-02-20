@@ -8,6 +8,8 @@ import darcyProject from "./assets/darcyProject.png";
 import mobileProject from "./assets/mobileProject.png";
 import Person from "./assets/person.png";
 import yProject from "./assets/yproject.png";
+import { Carousel } from "./components/Carousel";
+import { Experiences } from "./components/Experiences";
 import { Header } from "./components/Header";
 import { Projects } from "./components/Projects";
 import { Stacks } from "./components/Stacks";
@@ -49,17 +51,17 @@ function App() {
             <div className="stakcsContain">
               <h1>Front-End</h1>
               <div className="divStack">
-                <Stacks technologyName="TypeScript"> <SiTypescript color="#3178C6"/> </Stacks>
-                <Stacks technologyName="React"> <FaReact color="#00d8ff"/> </Stacks>
+                <Stacks technologyName="TypeScript"> <SiTypescript color="#3178C6" /> </Stacks>
+                <Stacks technologyName="React"> <FaReact color="#00d8ff" /> </Stacks>
                 <Stacks technologyName="NextJs"> <SiNextdotjs /> </Stacks>
-                <Stacks technologyName="Tailwind"> <RiTailwindCssFill color="#00d8ff"/> </Stacks>
+                <Stacks technologyName="Tailwind"> <RiTailwindCssFill color="#00d8ff" /> </Stacks>
               </div>
             </div>
             <div className="stakcsContain">
               <h1>Back-End</h1>
               <div className="divStack">
-                <Stacks technologyName="Java"> <FaJava color="#5382A1"/> </Stacks>
-                <Stacks technologyName="SpringBoot"> <BiLogoSpringBoot color="#6DB33F"/> </Stacks>
+                <Stacks technologyName="Java"> <FaJava color="#5382A1" /> </Stacks>
+                <Stacks technologyName="SpringBoot"> <BiLogoSpringBoot color="#6DB33F" /> </Stacks>
                 <Stacks technologyName="Express"> <SiExpress /> </Stacks>
               </div>
             </div>
@@ -67,7 +69,7 @@ function App() {
               <h1>Ferramentas</h1>
               <div className="divStack">
                 <Stacks technologyName="GitHub"> <FaGithub /> </Stacks>
-                <Stacks technologyName="Git"> <BsGit color="#E2432A"/> </Stacks>
+                <Stacks technologyName="Git"> <BsGit color="#E2432A" /> </Stacks>
               </div>
             </div>
           </section>
@@ -115,7 +117,9 @@ function App() {
           </section>
         </section>
         <section className="experiencesSection">
-
+          <Carousel>
+            <Experiences title="A" description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" startExperience="Início: 2026.1" finshExperience="Término: 2023.2)" />
+          </Carousel>
         </section>
       </main>
     </div>

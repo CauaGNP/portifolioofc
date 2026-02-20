@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import CodeImage from "../../assets/code.png";
-import "./style.css";
+import "./styles.css";
 
 export function Header() {
   const title = "Bem vindo!!";

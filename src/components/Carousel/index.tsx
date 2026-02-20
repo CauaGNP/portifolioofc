@@ -1,20 +1,48 @@
-// import React, { useState, type ReactNode } from "react";
+import React, { useState, type ReactNode } from "react";
+import "./styles.css";
 
-// export function Carousel(children: ReactNode) {
-//     const [currentIndex, setCurrentIndex] = useState<number>(0)
+interface CarouselProps {
+    children: ReactNode;
+}
 
-//     function nexSlide() {
-//         setCurrentIndex((prevIndex) =>
-//             prevIndex === React.Children.count(children) - 1 ? 0 : prevIndex + 1
-//         );
-//     };
+export function Carousel({ children }: CarouselProps) {
+    const [currentIndex, setCurrentIndex] = useState<number>(0)
 
-//     function prevSlide() {
-//         setCurrentIndex((prevIndex) =>
-//             prevIndex === 0 ? React.Children.count(children) - 1 : prevIndex - 1
-//         );
-//     };
+    const nextSlide = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === React.Children.count(children) - 1 ? 0 : prevIndex + 1
+        );
+    };
 
-//     return <section>
-//     </section>
-// }
+    const prevSlide = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === 0 ? React.Children.count(children) - 1 : prevIndex - 1
+        );
+    };
+
+    return <section>
+        <button className="nav-btn prev" onClick={prevSlide}>‹</button>
+
+        <div className="carousel-wrapper">
+            <div
+                className="carousel-content"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+                {React.Children.map(children, (child) => (
+                    <div className="carousel-item">{child}</div>
+                ))}
+            </div>
+        </div>
+
+        <button className="nav-btn next" onClick={nextSlide}>›</button>
+
+        <div className="dots">
+            {React.Children.map(children, (_, index) => (
+                <span
+                    className={`dot ${currentIndex === index ? 'active' : ''}`}
+                />
+            ))}
+        </div>
+
+    </section>
+}
