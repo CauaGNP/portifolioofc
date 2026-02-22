@@ -1,21 +1,25 @@
 .typeStackSection{
-    width: 30%;
+    width: fit-content;
 
     background: #2221218f;
-    border-radius: 6px;
-    border: 1px solid #0000004d;
-    padding: 2px 8px;
+    border-radius: 0.375rem;
+    border: 0.0625rem solid #0000004d;
+    padding: 0.125rem 0.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
 }
 .typeStackSection svg{
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .titleTypeStack{
     font-family: var(--poppins);
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--textPrimaryColor);
+}
+
+@media screen and (max-width: 425px) {
+   
 }

@@ -5,10 +5,10 @@
 }
 
 .main {
-  padding: 24px;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 4rem;
 }
 
 h1 {
@@ -39,7 +39,7 @@ p{
 }
 
 .aboutMeImage {
-  width: 300px;
+  width: 18.75rem;
   animation: aboutFadeIn ease 2s forwards;
 }
 
@@ -56,25 +56,25 @@ p{
 
 .stacksTitle{
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .stackSection {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .stakcsContain{
   text-align: center;
   width: 100%;
   background: rgba(45, 44, 44, 0.504);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  padding: 24px;
-  border-radius: 8px;
-  border: 1px solid #0000004d;
+  backdrop-filter: blur(0.625rem);
+  -webkit-backdrop-filter: blur(0.625rem);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #0000004d;
   box-shadow: 0 4px 30px #0000001a;
 }
 
@@ -88,6 +88,31 @@ p{
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
-  gap: 32px;
+  margin-top: 1.5rem;
+  gap: 2rem;
+}
+
+.contactTitle{
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (max-width: 425px) {
+  .aboutMe .imageContain {
+    display: none;
+  }
+  .aboutMeTextContain {
+    width: 100%;
+    text-align: center; 
+  }
+  .stackSection {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .main {
+    padding: 1rem;
+    gap: 2.5rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
 }

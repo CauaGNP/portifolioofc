@@ -1,0 +1,31 @@
+.socialMediaLink{
+    background-color: var(--secondaryColorTranparent);
+    width: fit-content;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.socialMediaLink svg{
+    color: var(--textPrimaryColor);
+    font-size: 1.5rem;
+}
+
+.socialMediaText{
+    font-family: var(--robotoMono);
+    color: var(--textPrimaryColor);
+    font-weight: 400;
+}
+
+@media screen and (max-width: 425px) {
+    .socialMediaLink svg{
+        font-size: 1.2rem;
+    }
+
+    .socialMediaText{
+        font-size: 0.9rem;
+    }
+}

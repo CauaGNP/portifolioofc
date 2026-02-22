@@ -1,4 +1,5 @@
 import React, { useState, type ReactNode } from "react";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "./styles.css";
 
 interface CarouselProps {
@@ -20,23 +21,23 @@ export function Carousel({ children }: CarouselProps) {
         );
     };
 
-    return <section>
-        <button className="nav-btn prev" onClick={prevSlide}>‹</button>
+    return <section className="carouselSection">
+        <button className="buttonPass backpassButton" onClick={prevSlide}><IoIosArrowBack /></button>
 
-        <div className="carousel-wrapper">
+        <div className="carouselWrapper">
             <div
-                className="carousel-content"
+                className="carouselContent"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
                 {React.Children.map(children, (child) => (
-                    <div className="carousel-item">{child}</div>
+                    <div className="carouselItem">{child}</div>
                 ))}
             </div>
         </div>
 
-        <button className="nav-btn next" onClick={nextSlide}>›</button>
+        <button className="buttonPass nextpassButton" onClick={nextSlide}><IoIosArrowForward /></button>
 
-        <div className="dots">
+        <div >
             {React.Children.map(children, (_, index) => (
                 <span
                     className={`dot ${currentIndex === index ? 'active' : ''}`}

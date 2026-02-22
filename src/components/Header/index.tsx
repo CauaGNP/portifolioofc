@@ -57,16 +57,6 @@ export function Header() {
       </div>
       <div className="imageContain">
         <img src={CodeImage} className="image" />
-        <p className="paragrapfImage">
-          Data illustrations by{" "}
-          <a
-            href="https://storyset.com/data"
-            className="storySetLink"
-            target="_blank"
-          >
-            Storyset
-          </a>
-        </p>
       </div>
     </header>
   );

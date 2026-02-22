@@ -1,52 +1,60 @@
-.carousel-container {
+.carouselSection{
   position: relative;
   width: 100%;
-  max-width: 600px;
-  margin: auto;
 }
 
-.carousel-wrapper {
+.carouselWrapper{
   overflow: hidden; 
   width: 100%;
 }
 
-.carousel-content {
-  display: flex;
-  transition: transform 0.5s ease-in-out; 
-}
-
-.carousel-item {
-  min-width: 100%;  
+.carouselItem {
+  min-width: 100%; 
   box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav-btn {
+.carouselContent{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.buttonPass{
+  background-color: var(--backgroundPrimary);
+  width: 1.875rem;
+  height: 1.875rem;
+
+  border: 0.0625rem solid #1b1b1b;
+  border-radius: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: absolute;
-  transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(-50%); 
   z-index: 10;
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
   cursor: pointer;
-  padding: 10px;
+
+  transition: all 0.5s ease;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
-
-.dots {
-  text-align: center;
-  margin-top: 10px;
+.buttonPass svg {
+  font-size: 0.9375rem;
 }
 
-.dot {
-  height: 10px;
-  width: 10px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 5px;
-  cursor: pointer;
+.nextpassButton {
+  right: 0.625rem; 
 }
 
-.dot.active { background-color: #717171; }
+.backpassButton{
+  left: 0.625rem; 
+}
+
+.buttonPass:hover{
+  background-color: rgb(87, 87, 87);
+}

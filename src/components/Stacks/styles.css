@@ -1,6 +1,6 @@
 .stackContain {
-  width: 130px;
-  height: 130px;
+  width: 8.125rem;
+  height: 8.125rem;
 
   display: flex;
   flex-direction: column;
@@ -9,19 +9,19 @@
 }
 
 .children {
-  width: 100px;
-  height: 70px;
+  width: 6.25rem;
+  height: 4.375rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .children svg {
-  font-size: 45px;
+  font-size: 2.8125rem;
 }
 
 .stackText {
   font-family: var(--poppins);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
 }

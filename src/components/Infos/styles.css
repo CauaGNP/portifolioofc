@@ -1,0 +1,26 @@
+.infoTitle{
+    font-family: var(--poppins);
+    color: var(--textPrimaryColor);
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.infoDescription{
+    width: fit-content;
+    background-color: #0000004d;
+    font-family: var(--robotoMono);
+    color: var(--textPrimaryColor);
+    font-weight: 300;
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+}
+
+@media screen and (max-width:425px) {
+    .infoTitle{
+        font-size: 1.3rem;
+    }
+    .infoDescription{
+        font-size: 0.835rem;
+    }
+}

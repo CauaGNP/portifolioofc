@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { BiLogoSpringBoot, BiLogoTypescript } from "react-icons/bi";
 import { BsGit } from "react-icons/bs";
 import { FaGithub, FaJava, FaReact } from "react-icons/fa";
@@ -8,8 +9,8 @@ import darcyProject from "./assets/darcyProject.png";
 import mobileProject from "./assets/mobileProject.png";
 import Person from "./assets/person.png";
 import yProject from "./assets/yproject.png";
-import { Carousel } from "./components/Carousel";
-import { Experiences } from "./components/Experiences";
+import { Contacts } from "./components/Contacts";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Projects } from "./components/Projects";
 import { Stacks } from "./components/Stacks";
@@ -28,21 +29,11 @@ function App() {
               desenvolvimento web e experiência em aplicações mobile.
               Atualmente, estou no 5º período de Sistemas para Internet, unindo
               a base acadêmica com a prática na construção de interfaces
-              modernas e backends eficientes.
+              modernas, backends eficientes e clean code.
             </p>
           </div>
           <div className="imageContain">
             <img className="aboutMeImage" src={Person} />
-            <p className="paragrapfImage">
-              Data illustrations by{" "}
-              <a
-                href="https://storyset.com/data"
-                className="storySetLink"
-                target="_blank"
-              >
-                Storyset
-              </a>
-            </p>
           </div>
         </section>
         <section >
@@ -116,12 +107,16 @@ function App() {
             </Projects>
           </section>
         </section>
-        <section className="experiencesSection">
-          <Carousel>
-            <Experiences title="A" description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" startExperience="Início: 2026.1" finshExperience="Término: 2023.2)" />
-          </Carousel>
-        </section>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}>
+          <h1 className="contactTitle">Contatos</h1>
+          <Contacts />
+        </motion.div>
       </main>
+      <Footer />
     </div>
   );
 }

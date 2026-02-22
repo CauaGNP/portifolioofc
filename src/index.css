@@ -6,6 +6,7 @@
   --textPrimaryColor: #dadada;
   --secondaryColor: #4f28ea;
   --secondaryColorHover: #3b1eae;
+  --secondaryColorTranparent: #4f28ea88;
   --poppins: "Poppins", sans-serif;
   --robotoMono: "Roboto Mono", monospace;
 }
