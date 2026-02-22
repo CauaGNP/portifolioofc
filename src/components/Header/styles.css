@@ -75,3 +75,9 @@
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 425px) {
+ .headerTitle, .headerSubTitle {
+  text-align: center;
+ } 
+}

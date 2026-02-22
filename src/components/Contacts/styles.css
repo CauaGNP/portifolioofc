@@ -34,4 +34,8 @@
     .contactImage{
         display: none;
     }
+
+    .socialMediaContact{
+        flex-wrap: wrap;
+    }
 }
