@@ -116,3 +116,15 @@ p{
     font-size: 1.5rem;
   }
 }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .stackSection {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;      
+  }
+
+  .stackSection > div {
+    flex: 1 1 150px;
+  }
+}
